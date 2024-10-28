@@ -1,0 +1,103 @@
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+  }
+  
+  .toggle-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Overlay to dim background when sidebar is open */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Rotate toggle bars when open */
+  .toggle-bar.rotate {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  
+  .toggle-bar.hide {
+    opacity: 0;
+  }
+  
+  .toggle-bar.rotate-reverse {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding-top: 3rem;
+      width: 200px;
+      background-color: #333;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      /* justify-content: center; */
+      transform: translateX(100%);
+    }
+  
+    .navbar-links.open {
+      transform: translateX(0);
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  
