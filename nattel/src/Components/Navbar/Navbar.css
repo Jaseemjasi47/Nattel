@@ -1,12 +1,12 @@
 /* Basic styling for the navbar */
-.navbar {
+.my-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0; /* Remove margin for a fixed navbar */
-    padding: 1rem;
+    margin: 6px; /* Remove margin for a fixed navbar */
+    padding: .5rem 1.5rem;
     background-color: #0f2c67;
-    border-radius: 0; /* Remove border radius for a cleaner look */
+    border-radius: 5px; /* Remove border radius for a cleaner look */
     color: #fff;
     position: fixed; /* Change to fixed */
     top: 0; /* Fix it to the top */
@@ -15,7 +15,7 @@
     z-index: 1000; /* Ensure it is above other elements */
   }
 
-  .logo {
+  .my-logo {
     width: 50px;
   }
   
@@ -23,19 +23,21 @@
     width: 50px;
   }
    */
-  .navbar-links {
+  .my-navbar-links {
+    padding-top: 10px;
     display: flex;
     gap: 1.5rem;
     transition: transform 0.3s ease;
   }
   
-  .navbar-links li {
+  
+  .my-navbar-links li {
     list-style: none;
     position: relative;
     overflow: hidden; /* Prevent underline from overflowing */
   }
   
-  .navbar-links a {
+  .my-navbar-links a {
     color: #fff;
     text-decoration: none;
     padding: 0.25rem 0;
@@ -45,7 +47,7 @@
   
   /* Hover effect only for larger screens */
   @media (min-width: 769px) {
-    .navbar-links li::after {
+    .my-navbar-links li::after {
       content: '';
       position: absolute;
       left: 0;
@@ -58,17 +60,21 @@
       transition: transform 0.3s ease; /* Smooth animation */
     }
   
-    .navbar-links li:hover {
+    .my-navbar-links li:hover {
       color: #ffcc00; /* Change text color on hover */
     }
   
-    .navbar-links li:hover::after {
+    .my-navbar-links li:hover::after {
       transform: scaleX(1); /* Animate underline to full width */
     }
   }
+
+  .my-active {
+    color: #ffcc00;
+  }
   
   
-  .navbar-toggle {
+  .my-navbar-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -76,7 +82,7 @@
     z-index: 1001;
   }
   
-  .toggle-bar {
+  .my-toggle-bar {
     width: 25px;
     height: 3px;
     background-color: #fff;
@@ -102,42 +108,43 @@
   } */
   
   /* Rotate toggle bars when open */
-  .toggle-bar.rotate {
+  .my-toggle-bar.rotate {
     transform: rotate(45deg) translate(4px, 4px);
   }
   
-  .toggle-bar.hide {
+  .my-toggle-bar.hide {
     opacity: 0;
   }
   
-  .toggle-bar.rotate-reverse {
+  .my-toggle-bar.rotate-reverse {
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
   /* Responsive styling for smaller screens */
   @media (max-width: 768px) {
-    .navbar-links {
+    .my-navbar-links {
       position: fixed;
       top: 0;
       right: 0;
       height: 100%;
       padding-top: 4rem;
-      margin-top: 10px;
+      margin-top: 6px;
       width: 200px;
       background-color: #0f2c67;
-      border-radius: 10px;
+      border-radius: 5px;
       flex-direction: column;
       gap: 2rem;
       align-items: center;
+      text-align: center;
       /* justify-content: center; */
       transform: translateX(100%);
     }
   
-    .navbar-links.open {
+    .my-navbar-links.open {
       transform: translateX(0);
     }
   
-    .navbar-toggle {
+    .my-navbar-toggle {
       display: flex;
     }
   }

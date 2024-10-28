@@ -1,9 +1,11 @@
 import React from 'react';
 import './Home.css'; // Import the CSS file
+import HomeCarousel from '../../Components/HomeCarousel';
 
 function Home() {
   return (
     <div className="home-container">
+        <HomeCarousel/>
       <section className="intro-section">
         <h1>NATTEL ASSOCIATES</h1>
         <p>

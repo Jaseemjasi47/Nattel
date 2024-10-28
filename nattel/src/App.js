@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loader from './Components/Loader/Loader';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import Loader2 from './Components/Loader/Loader2';
 
 function App() {
   const [loading, setLoading] = useState(true);

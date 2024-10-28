@@ -37,11 +37,35 @@
     }
     75% {
         opacity: 0;
-        width: 200;
-        background: rgba(255, 255, 255, 0.8);
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+.logoN {
+    width: 200px;
+    /* Adjust size as needed */
+    z-index: 1000;
+}
+
+.flight {
+    width: 200px;
+    /* Adjust size as needed */
+    z-index: 1005;
+    animation: moveToTopRight 3s forwards;
+    /* Animation duration and end state */
+}
+
+@keyframes moveToTopRight {
+    0% {
+        transform: translate(-100%, 100%); /* Start at bottom-left */
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(calc(100vw - 100%), -100%); /* Move to top-right corner */
         opacity: 1;
     }
 }

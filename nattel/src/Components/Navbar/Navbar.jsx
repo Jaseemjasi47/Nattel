@@ -12,45 +12,45 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <img src={whitelogo} alt="Nattel Logo" className="logo" />
+    <nav className="my-navbar">
+      <div className="my-navbar-logo">
+        <img src={whitelogo} alt="Nattel Logo" className="my-logo" />
       </div>
 
       {/* Overlay to dim background when sidebar is open */}
       <div className={`overlay ${isOpen ? 'show' : ''}`} onClick={toggleMenu}></div>
 
-      <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
+      <ul className={`my-navbar-links ${isOpen ? 'open' : ''}`}>
         <Link to="/" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/' ? 'active' : ''}`}>Home</li>
+          <li className={`${location.pathname === '/' ? 'my-active' : ''}`}>Home</li>
         </Link>
         <Link to="/about" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/about' ? 'active' : ''}`}>About</li>
+          <li className={`${location.pathname === '/about' ? 'my-active' : ''}`}>About</li>
         </Link>
         <Link to="/admissions" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/admissions' ? 'active' : ''}`}>Admissions</li>
+          <li className={`${location.pathname === '/admissions' ? 'my-active' : ''}`}>Admissions</li>
         </Link>
         <Link to="/nursing" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/nursing' ? 'active' : ''}`}>UK Nursing Opportunities</li>
+          <li className={`${location.pathname === '/nursing' ? 'my-active' : ''}`}>UK Nursing Opportunities</li>
         </Link>
         <Link to="/careers" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/careers' ? 'active' : ''}`}>Careers</li>
+          <li className={`${location.pathname === '/careers' ? 'my-active' : ''}`}>Careers</li>
         </Link>
         <Link to="/education" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/education' ? 'active' : ''}`}>Global Education</li>
+          <li className={`${location.pathname === '/education' ? 'my-active' : ''}`}>Global Education</li>
         </Link>
         <Link to="/contact" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/contact' ? 'active' : ''}`}>Contact Us</li>
+          <li className={`${location.pathname === '/contact' ? 'my-active' : ''}`}>Contact Us</li>
         </Link>
         <Link to="/consultation" onClick={toggleMenu} className='link'>
-          <li className={`${location.pathname === '/consultation' ? 'active' : ''}`}>Schedule a Consultation</li>
+          <li className={`${location.pathname === '/consultation' ? 'my-active' : ''}`}>Schedule a Consultation</li>
         </Link>
       </ul>
 
-      <div className="navbar-toggle" onClick={toggleMenu}>
-        <span className={`toggle-bar ${isOpen ? 'rotate' : ''}`}></span>
-        <span className={`toggle-bar ${isOpen ? 'hide' : ''}`}></span>
-        <span className={`toggle-bar ${isOpen ? 'rotate-reverse' : ''}`}></span>
+      <div className="my-navbar-toggle" onClick={toggleMenu}>
+        <span className={`my-toggle-bar ${isOpen ? 'rotate' : ''}`}></span>
+        <span className={`my-toggle-bar ${isOpen ? 'hide' : ''}`}></span>
+        <span className={`my-toggle-bar ${isOpen ? 'rotate-reverse' : ''}`}></span>
       </div>
     </nav>
   );

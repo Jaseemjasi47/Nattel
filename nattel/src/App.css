@@ -6,6 +6,6 @@
 /* Media query for smaller mobile screens */
 @media (max-width: 760px) {
   .main-content {
-    padding-top: 60px; /* Further adjust this value as needed */
+    padding-top: 80px; /* Further adjust this value as needed */
   }
 }
