@@ -15,8 +15,16 @@
     /* Ensure it's above other elements */
 }
 
-.loader-logo {
+.footer-logo {
+    position: absolute;
+    bottom: 0;
     width: 200px;
+    align-items: center;
+}
+
+.loader-logo {
+    margin-bottom: 50px;
+    width: 150px;
     /* Adjust size as needed */
     animation: moveToTopLeft 3s forwards;
     /* Animation duration and end state */

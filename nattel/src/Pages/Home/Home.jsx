@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="home-container">
         <HomeCarousel/>
-      <section className="intro-section">
-        <h1>NATTEL ASSOCIATES</h1>
+      <section className="intro-section text-3">
+        <h1 className='text-1'>NATTEL ASSOCIATES</h1>
         <p>
           NATTEL ASSOCIATES is a leading Overseas Education Consultant that has assisted students in studying in India & abroad at reputed Institutions in Kerala, Karnataka, Tamilnadu & USA, UK, Australia, New Zealand, Canada, Germany, Singapore, and more. With decades of experience and expertise under its belt, NATTEL ASSOCIATES has also assisted students with their coaching for PROMETRIC, IELTS, OET, UKVI-IELTS. 
         </p>
@@ -18,7 +18,7 @@ function Home() {
 
       <section className="services-section">
         <h2>NATTEL ASSOCIATES OFFERS</h2>
-        <ul className="services-list">
+        <ul className="services-list text-2">
           <li>Cutting Edge Counseling for Studies Abroad</li>
           <li>Selection of Universities & Programs</li>
           <li>Pre - Application Process & Admission Formalities</li>

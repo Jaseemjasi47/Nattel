@@ -5,6 +5,7 @@
     justify-content: space-between;
     margin: 6px; /* Remove margin for a fixed navbar */
     padding: .5rem 1.5rem;
+    font-family: 'Bunga Zivilia', sans-serif;
     background-color: #0f2c67;
     border-radius: 5px; /* Remove border radius for a cleaner look */
     color: #fff;

@@ -1,3 +1,48 @@
+@font-face {
+  font-family: 'Bunga Zivilia';
+  src: url('./Assets/fonts/BungaZivilia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vergilia';
+  src: url('./Assets/fonts/Vergilia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sinosans Regular';
+  src: url('./Assets/fonts/SinosansRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Bunga Zivilia', sans-serif;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 16px !important;
+}
+
+.text-1 {
+  font-family: 'Bunga Zivilia', sans-serif;
+}
+
+.text-2 {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 16px !important;
+}
+
+.text-3 {
+  font-family: 'Sinosans Regular', sans-serif;
+}
+
+
+
 .main-content {
   padding-top: 100px; /* Default padding for larger screens */
 }
