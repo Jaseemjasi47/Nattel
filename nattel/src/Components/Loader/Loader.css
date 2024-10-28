@@ -52,6 +52,30 @@
     }
 }
 
+.loader-logo2 {
+    margin-bottom: 50px;
+    width: 250px;
+    /* Adjust size as needed */
+    animation: loader2 3s forwards;
+    /* Animation duration and end state */
+}
+
+@keyframes loader2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: .8;
+        /* Start at center */
+    }
+
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
 .logoN {
     width: 200px;
     /* Adjust size as needed */

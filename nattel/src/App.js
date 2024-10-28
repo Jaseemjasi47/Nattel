@@ -5,6 +5,7 @@ import Loader from './Components/Loader/Loader';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Loader2 from './Components/Loader/Loader2';
+import WhatsApp from './Components/Floating-icon/whatsapp';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
+        <WhatsApp/>
       </>
         )}
     </Router>

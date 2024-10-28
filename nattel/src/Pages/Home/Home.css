@@ -24,8 +24,8 @@
   
   
   .services-section {
-    color: white;
-    background-color: #0c2257;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     padding: 1.5rem;
     /* border-radius: 8px; */
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
@@ -50,8 +50,50 @@
   
   .services-list li::before {
     content: "✔"; /* You can use an icon here or a custom bullet */
-    color: #ffffff; /* Bullet color */
+    color: #000000; /* Bullet color */
     position: absolute;
     left: 0; /* Position it to the left */
   }
   
+
+
+  .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #27578f;
+  }
+  
+  .country-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .country-card {
+    flex: 1 1 calc(50% - 1rem); /* 2 columns on smaller screens */
+    max-width: 200px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Larger screen adjustments */
+  @media (min-width: 768px) {
+    .country-card {
+      flex: 1 1 calc(25% - 1rem); /* 4 columns on larger screens */
+    }
+  }

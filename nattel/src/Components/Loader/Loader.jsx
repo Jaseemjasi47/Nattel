@@ -6,8 +6,9 @@ import './Loader.css'; // Import the CSS file for styling
 function Loader() {
   return (
     <div className="loader-container">
-      <img src={logo} alt="Loading..." className="loader-logo" />
-      <img src={flogo} alt="Loading..." className="footer-logo" />
+      {/* <img src={logo} alt="Loading..." className="loader-logo" />
+      <img src={flogo} alt="Loading..." className="footer-logo" /> */}
+      <img src={flogo} alt="Loading..." className="loader-logo2" />
     </div>
   );
 }

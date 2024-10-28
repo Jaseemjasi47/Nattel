@@ -110,16 +110,17 @@
   
   /* Rotate toggle bars when open */
   .my-toggle-bar.rotate {
-    transform: rotate(45deg) translate(4px, 4px);
-  }
-  
-  .my-toggle-bar.hide {
-    opacity: 0;
-  }
-  
-  .my-toggle-bar.rotate-reverse {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
+    transform: rotate(45deg) translate(6px, 6px); /* Adjusted for a cleaner cross */
+}
+
+.my-toggle-bar.hide {
+    opacity: 0; /* Hides the middle bar if there's a third bar */
+}
+
+.my-toggle-bar.rotate-reverse {
+    transform: rotate(-45deg) translate(5px, -5px); /* Matches opposite angle of rotation */
+}
+
   
   /* Responsive styling for smaller screens */
   @media (max-width: 768px) {
