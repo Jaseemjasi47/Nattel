@@ -3,17 +3,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0; /* Remove margin for a fixed navbar */
     padding: 1rem;
-    background-color: #333;
+    background-color: #0f2c67;
+    border-radius: 0; /* Remove border radius for a cleaner look */
     color: #fff;
-    position: relative;
+    position: fixed; /* Change to fixed */
+    top: 0; /* Fix it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .logo {
+    width: 50px;
   }
   
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  /* .navbar-logo {
+    width: 50px;
   }
-  
+   */
   .navbar-links {
     display: flex;
     gap: 1.5rem;
@@ -22,12 +31,42 @@
   
   .navbar-links li {
     list-style: none;
+    position: relative;
+    overflow: hidden; /* Prevent underline from overflowing */
   }
   
   .navbar-links a {
     color: #fff;
     text-decoration: none;
+    padding: 0.25rem 0;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth color transition */
   }
+  
+  /* Hover effect only for larger screens */
+  @media (min-width: 769px) {
+    .navbar-links li::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffcc00; /* Underline color */
+      transform: scaleX(0); /* Start with underline hidden */
+      transform-origin: left; /* Animate from left to right */
+      transition: transform 0.3s ease; /* Smooth animation */
+    }
+  
+    .navbar-links li:hover {
+      color: #ffcc00; /* Change text color on hover */
+    }
+  
+    .navbar-links li:hover::after {
+      transform: scaleX(1); /* Animate underline to full width */
+    }
+  }
+  
   
   .navbar-toggle {
     display: none;
@@ -45,7 +84,7 @@
   }
   
   /* Overlay to dim background when sidebar is open */
-  .overlay {
+  /* .overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -60,7 +99,7 @@
   .overlay.show {
     display: block;
     opacity: 1;
-  }
+  } */
   
   /* Rotate toggle bars when open */
   .toggle-bar.rotate {
@@ -82,9 +121,11 @@
       top: 0;
       right: 0;
       height: 100%;
-      padding-top: 3rem;
+      padding-top: 4rem;
+      margin-top: 10px;
       width: 200px;
-      background-color: #333;
+      background-color: #0f2c67;
+      border-radius: 10px;
       flex-direction: column;
       gap: 2rem;
       align-items: center;
