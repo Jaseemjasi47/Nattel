@@ -6,6 +6,16 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .frontlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frontlogo img{
+    width: 40vw;
+  }
   
   .intro-section {
     /* background-color: rgba(51, 112, 192, 0.6); */
@@ -60,7 +70,8 @@
   .section-heading {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: #27578f;
+    text-align: center;
+    color: #000000;
   }
   
   .country-grid {
@@ -94,6 +105,6 @@
   /* Larger screen adjustments */
   @media (min-width: 768px) {
     .country-card {
-      flex: 1 1 calc(25% - 1rem); /* 4 columns on larger screens */
+      flex: 1 1 calc(30% - 1rem); /* 4 columns on larger screens */
     }
   }
